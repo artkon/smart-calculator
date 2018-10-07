@@ -10,11 +10,11 @@ class SmartCalculator {
 
   calculate() {
     
-    for(var i = 3; i > 0; i--){
+    for(let i = 3; i > 0; i--){
 
       while( this.priority.indexOf( '' + i ) != -1 ){
 
-        var index = this.priority.lastIndexOf('' + i);
+        let index = this.priority.lastIndexOf('' + i);
 
         switch( this.operators.charAt(index) ) {
 
